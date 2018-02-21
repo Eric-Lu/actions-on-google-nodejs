@@ -2409,6 +2409,7 @@ class AssistantApp {
       };
     } else { // Google payment
       paymentOptions.googleProvidedOptions = {
+        billingAddressRequired: transactionConfig.billingAddressRequired,
         supportedCardNetworks: transactionConfig.cardNetworks,
         prepaidCardDisallowed: transactionConfig.prepaidCardDisallowed
       };
